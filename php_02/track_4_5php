@@ -1,0 +1,27 @@
+<?php
+
+$temperature = 
+[
+    "Venezia" => 16, "Bari" => 32,
+    "Roma" => 28, "Napoli" => 30,
+    "Milano" => 4, "Palermo" => 14,
+    "Torino" => 24, "Roccaraso" => -5000,
+    "Lecce" => 27, "Genova" => 30,
+    "Catania" => 11, "Cosenza" => 9,
+];
+
+foreach ($temperature as $cities => $temps) 
+{
+    if($temps > 25)
+    {
+        echo "nella citta di {$cities} fa molto caldo..., con una temperatura di {$temps} \n";
+    }
+    else if($temps > 15 && $temps < 25)
+    {
+        echo "nella citta di {$cities} fa caldo..., con una temperatura di {$temps} \n";
+    }
+    else
+    {
+        echo "nella citta di {$cities} fa freddo..., con una temperatura di {$temps} \n";
+    }
+}
