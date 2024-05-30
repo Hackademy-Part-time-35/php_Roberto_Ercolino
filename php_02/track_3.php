@@ -1,7 +1,8 @@
 <?php
 
+$start = 0;
 
-for($start = 0; $start <= 100; $start++)
+while($start <= 100)
 {
     if($start % 5 == 0 && $start % 3 == 0)
     {
@@ -19,4 +20,6 @@ for($start = 0; $start <= 100; $start++)
     {
         echo "niente... {$start} \n";
     }
+
+    $start++;
 }
