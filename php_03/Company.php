@@ -36,7 +36,7 @@ class Company
 
     public function media_cost($numbersMonth = 12)
     {
-        $media_cost = ($this->avg_salary * $this->employes) * $numbersMonth;
+        $media_cost = ($this->avg_salary * $this->employes) / $numbersMonth;
         echo "$this->name_company ha speso {$media_cost} in personale \n";
         array_push(self::$company_annual_cost, $media_cost);
     }
